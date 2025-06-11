@@ -45,6 +45,7 @@
     {"id":{"name":"john_run","path":"sprites/john_run/john_run.yy",},"order":27,},
     {"id":{"name":"yaremy_spriteportal_sizeup_summer2022","path":"sprites/yaremy_spriteportal_sizeup_summer2022/yaremy_spriteportal_sizeup_summer2022.yy",},"order":35,},
     {"id":{"name":"portalsSpriteSheet25","path":"sprites/portalsSpriteSheet25/portalsSpriteSheet25.yy",},"order":40,},
+    {"id":{"name":"obj_story","path":"objects/obj_story/obj_story.yy",},"order":22,},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"order":20,},
     {"id":{"name":"Sprite12","path":"sprites/Sprite12/Sprite12.yy",},"order":9,},
     {"id":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"order":19,},
