@@ -16,3 +16,4 @@ climb_speed = 2.5;        // Climbing speed
 ground_object = obj_barrier;   // Replace with your ground object's name
 ladder_object = obj_ladder;   // Replace with your ladder object's name
 
+has_key = false;
