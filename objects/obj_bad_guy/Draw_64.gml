@@ -1,16 +1,11 @@
-/// @DnDAction : YoYo Games.Drawing.Draw_Healthbar
-/// @DnDVersion : 1
-/// @DnDHash : 035690DB
-/// @DnDArgument : "x1" "20"
-/// @DnDArgument : "x1_relative" "1"
-/// @DnDArgument : "y1" "-40"
-/// @DnDArgument : "y1_relative" "1"
-/// @DnDArgument : "x2" "40"
-/// @DnDArgument : "x2_relative" "1"
-/// @DnDArgument : "y2" "-20"
-/// @DnDArgument : "y2_relative" "1"
-/// @DnDArgument : "value" "hp/hpmax*100"
-/// @DnDArgument : "backcol" "$FFFFFF00"
-/// @DnDArgument : "mincol" "$FF0000FF"
-/// @DnDArgument : "maxcol" "$FF00FF00"
-draw_healthbar(x + 20, y + -40, x + 40, y + -20, hp/hpmax*100, $FFFFFF00 & $FFFFFF, $FF0000FF & $FFFFFF, $FF00FF00 & $FFFFFF, 0, (($FFFFFF00>>24) != 0), (($FFFFFFFF>>24) != 0));
+draw_healthbar(
+    x - 16, y - 40,   // Left-Top corner
+    x + 16, y - 32,   // Right-Bottom corner (gives it width)
+    hp / hpmax * 100, // Health percent
+    $FFFFFF00,        // Background color (transparent)
+    $FF0000FF,        // Min color (red)
+    $FF00FF00,        // Max color (green)
+    0,                // Horizontal bar
+    true,             // Show background
+    true              // Show border
+);

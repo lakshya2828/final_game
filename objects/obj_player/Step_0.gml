@@ -1,4 +1,4 @@
-/// @description Insert description here
+
 // ##################### CONTROLS #####################
 move_x = keyboard_check(vk_right) - keyboard_check(vk_left);  // Determine left or right movement
 move_x *= move_speed;
@@ -57,6 +57,7 @@ else if (is_ceiling) { // If hitting ceiling (platform above), move back down
 if (y < -200 || y > room_height+20 || x < -20 || x > room_width+20) {  // Set the 4 boundaries of the room
 	room_restart(); // Restart room if object is outside the room
 }
+
 
 
 

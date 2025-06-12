@@ -1,14 +1,13 @@
-/// @description Insert description here
+// Draw the player
 draw_self();
-draw_sprite(Sprite_ak, 0, x, y);
 
-draw_self();  // Draw player sprite
+// Draw the gun near the legs (adjust Y position lower)
+draw_sprite(Sprite_ak, 0, x, y + 20); // 20 pixels below player center
 
+// Draw the key if the player has it
 if (has_key) {
-    draw_sprite(spr_key, 0, x + 16, y - 8);  // Draw key near player's hand; adjust offset if needed
+    draw_sprite(spr_key, 0, x + 16, y - 8);
 }
-
-
 
 
 
